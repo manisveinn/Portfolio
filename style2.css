@@ -204,6 +204,9 @@ header .header-cases {
   display: table;
 
   transition: all 2s ease-in 1s;
+  -webkit-transition: all 2s ease-in 1s;
+  -moz-transition: all 2s ease-in 1s;
+  -o-transition: all 2s ease-in 1s;
 }
 
 .index-banner:hover {
@@ -288,6 +291,9 @@ header .header-cases {
     width: calc(25% - 20px) !important;
 
     transition: all 2s ease-in 1s;
+    -webkit-transition: all 2s ease-in 1s;
+    -moz-transition: all 2s ease-in 1s;
+    -o-transition: all 2s ease-in 1s;
   }
 
   .index-boxlink-square:hover {
@@ -298,6 +304,9 @@ header .header-cases {
     width: calc(25% - 20px) !important;
 
     transition: all 2s ease-in 1s;
+    -webkit-transition: all 2s ease-in 1s;
+    -moz-transition: all 2s ease-in 1s;
+    -o-transition: all 2s ease-in 1s;
   }
 
   .index-boxlink-square-spark:hover {

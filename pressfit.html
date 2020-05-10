@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Máni Sveinn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="header-brand">Máni Sveinn</a>
+      <nav>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="header-cases">Projects</a>
+      </nav>
+    </header>
+    <main>
+      <section class="project">
+        <div class="wrapper">
+          <h2>Pressure fit box- with laser cutting</h2>
+          <article>
+            <p>The project was to use a CAD software to build a parametric design of a pressfit construction kit and cut it with a laser cutter. <br>
+              I decided to use this project to make a box that had internal dimensions of 401 mm on all sides. I then used the box as an measuring device for a robot competition I was organizing where the maximum size of the robots was 40 cm on all sides. I used a tutorial on youtube to guide me in the design of the box. Fusion 360 from Autodesk was used in the tutorial, so I used that as well. <br>
+              First I defined the parameters as is shown below. I defined them in Icelandic. <br>
+
+              <img class="img-size1" src="parametrar.PNG" alt="Parameters used">
+            <br>
+
+              Then I started to draw the box with those parameters. Since I needed a surtain internal dimensions I defined the dimension I needed and then added the thickness of the material used, which was 4 mm. So for example I defined the length of the box as Lengd (length) + Þykkt (thickness). <br>
+              Then I started to draw the fingers for the joints. <br>
+
+              <img class="img-size1" src="einnfingur.PNG" alt="pressure fit first finger">
+
+              Then I used the rectangular pattern command to make the rest of the fingers for that side. <br>
+
+              <img class="img-size1" src="fleirifingur.PNG" alt="pressure fit finger joints">
+
+              Then I drew the next side and then used the combine command to use the fingers of the first side to cut the fingers into the 2nd plate. <br>
+
+              <img class="img-size1" src="combine.PNG" alt="combine command to create slots">
+
+              And similarly I made the rest of the box as the render shows.
+              <br>
+              <img class="img-size1" src="inventormynd.PNG" alt="render">
+
+              Then I exported each side as dxf files and meant to import it into Inkscape to process it for the laser cutting but Inkscape didn’t accept the dxf files. Therefore I downloaded QCad and used that to change the dxf files to svg format. QCad added a few lines into the sketches but it was easy to remove them in Inkscape. <br>
+              Since the box was so big I could only fit two sides on the plates I used to cut it from. So in Inkscape I put two sides together in twice and then the fifth side was alone. I wanted to make the box see through so I googled patterns to cut out of the wood. I eventually found a so called Voronoi pattern which I imported and used on all sides. Also I wrote “Hönnunarkeppni HÍ” on the top side of the box which is the name of the competition I made the box for. The laser cutter then rastered that into the wood. <br>
+              Below is a snap shot of the pdf file for the top and front side of the box. <br>
+
+              <img class="img-size1" src="fronturtoppur.PNG" alt="inkscape">
+
+              The box didn’t end up being a pressure fit. That was because in the drawing the fingers and the slots for the fingers were the exact same size and since the laser cutter cuts away about 0,02 mm of material, that meant that the slots were slightly bigger than the fingers. This could have been fixed for example in Inkscape by widening the fingers by offsetting the appropriate lines. <br><br>
+              This is the laser cutter I used.
+              <img class="img-size1" src="skeri.jpg" alt="laser cutter">
+              <br>
+              I used 4 mm wood to make the box and the settings for that material and this laser cutter were: <br>
+              Raster settings: <br>
+              -Speed: 60% <br>
+              -Power: 100% <br>
+              Vector settings: <br>
+              -Speed: 5% <br>
+              -Power: 100% <br>
+              -Freq: 10 <br>
+              <br>
+              I encountered a problem when cutting the right and left sides of the box. The plate I cut them from was warped so the laser didnt cut the whole way through so I had to manually finish the job myself. Like the picture below shows that was quite the task and I didn't cut all the little pieces out.
+              <br>
+
+              <img class="img-size1" src="kludur.jpg" alt="mixup">
+              <br>
+              So here is the final product. I am very pleased with the outcome and the mishap with the right and left sides actually made it look even better.
+              <br>
+              <img class="img-size1" src="kassi.jpg" alt="the final outcome">
+
+              All the files I used to create the box can be downloded
+              <a href="pressfitbox.zip">
+                here
+              </a>
+              <br>
+              Links to the tutorials I used and the voronoi pattern can be found below. <br>
+            </p>
+          </article>
+          <div class="thisweb-links">
+            <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/9U2JPfkQpsE">
+              <div class="thisweb-link">
+                <img src="youticon.PNG" alt="youtube icon">
+                <caption>Fusion  360</caption>
+              </div>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/zN0jkUGdObw">
+              <div class="thisweb-link">
+                <img src="youticon.PNG" alt="youtube icon">
+                <caption>Inkscape</caption>
+              </div>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.craftsmanspace.com/free-patterns/voronoi-2d-patterns.html">
+              <div class="thisweb-link">
+                <img src="voronoi.gif" alt="voronoi pattern">
+                <caption>Voronoi Pattern</caption>
+              </div>
+            </a>
+
+
+          </div>
+      </section>
+    </main>
+    <div class="wrapper">
+      <footer>
+        <ul class="footer-links-main">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+        <ul class="footer-links-cases">
+          <li><p>Latest cases</p></li>
+          <li><a href="honnkeppni.html">Hönnunarkeppni</a></li>
+          <li><a href="TS20.html">TS20</a></li>
+          <li><a href="TS19.html">TS19</a></li>
+          <li><a href="TS18.html">TS18</a></li>
+        </ul>
+        <div class="footer-sm">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/manisveinn/Portfolio">
+            <img src="gitlogo.PNG" alt="github icon">
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/manisveinn">
+            <img src="faceb.PNG" alt="facebook icon">
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/manisveinn/">
+            <img src="insta.PNG" alt="instagram icon">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
